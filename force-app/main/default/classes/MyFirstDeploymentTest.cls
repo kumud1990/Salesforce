@@ -1,14 +1,14 @@
 @isTest
 public  class MyFirstDeploymentTest {
     
-     @IsTest
-    static void myunitest(){
+     
+    static testmethod void myunitest(){
         
-        Test.startTest();
+       
        MyFirstDeployment instUnitTest=new MyFirstDeployment();
        instUnitTest.mySecondDeplymentMethod();
        instUnitTest.mythirdDeplymentMethod();
-        Test.stopTest();
+       
         
     }
 }
