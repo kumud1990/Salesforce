@@ -10,4 +10,8 @@ public with sharing class MyFirstDeployment {
          System.debug('Deployment is inprogress');
 
     }
+     public mythirdDeplymentMethod(){
+         System.debug('Deployment is inprogress');
+
+    }
 }
