@@ -3,6 +3,7 @@ public with sharing class MyFirstDeployment {
 
         System.debug('Deployment is inprogress');
         system.debug('second deployment');
+         system.debug('third deployment');
 
     }
 
