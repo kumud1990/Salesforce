@@ -6,7 +6,11 @@ public with sharing class MyFirstDeployment {
 
     }
 
-    public mySecondDeplymentMethod(){
+    public void mySecondDeplymentMethod(){
+         System.debug('Deployment is inprogress');
+
+    }
+     public void mythirdDeplymentMethod(){
          System.debug('Deployment is inprogress');
 
     }
