@@ -1,18 +1,28 @@
-name: Validate Production Pull Request
+name: Validate pull request
 
 on:
   pull_request:
     branches:
-      - master
+      - main
+    types: [opened, synchronize]
     paths:
       - 'force-app/**'
+
 jobs:
-  validate:
+  validate-deployment:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Validate on ${{ vars.ENVIRONMENT_NAME }}
-        uses: jawills/sf-deploy@v1.0
+    container:
+      image: salesforce/cli:latest-slim
+    steps:      
+      - name: 'Checkout source code'
+        uses: actions/checkout@v4
         with:
-          SFDX_AUTH_URL: ${{ secrets.SFDX_AUTH_URL }}
-          DRY_RUN: true
+          fetch-depth: 0
+      
+      - name: 'Authenticate using SFDX_AUTH_URL'
+        run: | 
+          echo ${{ secrets.SFDX_AUTH_URL }} | sf org login sfdx-url -s -u
+
+      - name: 'Validate'
+        run: |
+          sf project deploy validate -d force-app/ -l RunLocalTests -w 30          
