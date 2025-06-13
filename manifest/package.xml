@@ -5,9 +5,14 @@
         <members>MyFirstDeploymentTest</members>
         <name>ApexClass</name>
     </types>
-    <!--<types>
+     <types>
+        
         <members>*</members>
-        <name>ApexComponent</name>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomField</name>
     </types>
     <types>
         <members>*</members>
@@ -32,6 +37,6 @@
     <types>
         <members>*</members>
         <name>StaticResource</name>
-    </types> -->
+    </types> 
     <version>63.0</version>
 </Package>
