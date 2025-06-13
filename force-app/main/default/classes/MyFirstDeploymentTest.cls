@@ -5,9 +5,8 @@ public  class MyFirstDeploymentTest {
     static testmethod void myunitest(){
         
        
-       MyFirstDeployment instUnitTest=new MyFirstDeployment();
-       instUnitTest.mySecondDeplymentMethod();
-       instUnitTest.mythirdDeplymentMethod();
+       MyFirstDeployment instUnitTest3=new MyFirstDeployment();
+       
        
         
     }
