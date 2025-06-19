@@ -7,7 +7,7 @@ public  class MyFirstDeploymentTest {
        
        MyFirstDeployment instUnitTest=new MyFirstDeployment();
        MyFirstDeployment.MyFirstDeployment2();
-       system.debug('testtt');
+       system.debug('testtt222');
        //instUnitTest.mythirdDeplymentMethod();
        
         
