@@ -6,8 +6,9 @@ public  class MyFirstDeploymentTest {
         
        
        MyFirstDeployment instUnitTest=new MyFirstDeployment();
-       instUnitTest.mySecondDeplymentMethod();
-       instUnitTest.mythirdDeplymentMethod();
+       MyFirstDeployment.MyFirstDeployment2();
+       system.debug('testtt222');
+       //instUnitTest.mythirdDeplymentMethod();
        
         
     }
