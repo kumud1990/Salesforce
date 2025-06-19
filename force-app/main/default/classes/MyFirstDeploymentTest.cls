@@ -6,7 +6,7 @@ public  class MyFirstDeploymentTest {
         
        
        MyFirstDeployment instUnitTest=new MyFirstDeployment();
-       instUnitTest.MyFirstDeployment2();
+       MyFirstDeployment.MyFirstDeployment2();
        //instUnitTest.mythirdDeplymentMethod();
        
         
