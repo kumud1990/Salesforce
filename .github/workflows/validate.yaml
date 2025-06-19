@@ -25,4 +25,4 @@ jobs:
 
       - name: 'Validate'
         run: |
-          sf project deploy validate -d force-app/ -l Runspecified --tests "MyFirstDeploymentTest"
+          sf project deploy validate -d force-app/ -l RunSpecifiedTests --tests "MyFirstDeploymentTest"
